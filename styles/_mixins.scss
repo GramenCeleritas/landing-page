@@ -1,0 +1,61 @@
+@import "variables";
+
+@mixin button() {
+    border-radius: var($border-radius);
+}
+
+@mixin paragraphcolor() {
+    color: $colorforparagraph;
+    margin: 0;
+}
+
+@mixin normalizebutton() {
+    background-color: $maincolor;
+    text-decoration: none;
+    color: $buttons-text-color;
+    text-align: center;
+    font-family: $mainfont;
+    border-radius: $border-radius;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+@mixin smalltext() {
+    margin: 0;
+    font-family: $mainfont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+}
+
+@mixin titlelargetext() {
+    margin: 0;
+    font-family: $mainfont;
+    font-style: normal;
+    font-weight: $font-weight-large;
+    font-size: 64px;
+    line-height: 64px;
+    text-align: center;
+}
+
+@mixin smalltextv2() {
+    margin: 0;
+    font-family: $mainfont;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+
+}
+
+@mixin listyle() {
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+}
