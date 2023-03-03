@@ -90,6 +90,7 @@ body .hero .textblock {
 body .hero .textandbuton {
   display: flex;
   flex-direction: column;
+  width: 450px;
   gap: 30px;
 }
 body .hero .headertext {
