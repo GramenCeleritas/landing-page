@@ -39,9 +39,6 @@ body {
 
 
         .red-circle-container {
-            position: relative;
-            max-width: 1450px;
-            max-height: 1450px;
 
             .redcircle {
                 position: relative;
@@ -51,7 +48,7 @@ body {
                 background-color: $maincolor;
                 overflow: hidden;
                 top: -25%;
-                left: 9%;
+                transition: left 0.5s;
                 &::before {
                     content: "";
                     position: absolute;
@@ -150,6 +147,7 @@ body {
                 flex-direction: row;
                 max-width: 1903px;
                 margin-top: 40px;
+                transition: gap 2s ease-in-out;
                 
                 
 
@@ -222,6 +220,7 @@ body {
                 overflow: hidden;
                 position: relative;
                 z-index: 1;
+                transition: width 1s ease-in-out;
 
                 .line {
                     width: 90px;
@@ -283,6 +282,7 @@ body {
                 border-radius: 0 0 50px 50px;
                 z-index: 1;
                 position: relative;
+                transition: width 1s ease-in-out;
             }
 
             .ContactUsHeader {
@@ -298,6 +298,7 @@ body {
                 flex-direction: row;
                 margin-top: 50px;
                 padding-left: 13rem;
+                transition: width 1s ease-in-out;
             }
 
             form {
@@ -344,6 +345,7 @@ body {
                 gap: 30px;
                 color: #ffffff;
                 margin-top: 36px;
+                transition: margin-left 1s ease-in-out;
 
                 li {
                     @include listyle();
@@ -527,6 +529,10 @@ body {
     ul {
         margin-left: 100px;
     }
+
+    .redcircle {
+        left: 9%;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -548,5 +554,9 @@ body {
 
     ul {
         margin-left: 20px;
+    }
+
+    .redcircle {
+        left: 1%;
     }
 }

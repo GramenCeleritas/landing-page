@@ -42,11 +42,6 @@ body .hero::before {
   opacity: 1;
   z-index: 0;
 }
-body .hero .red-circle-container {
-  position: relative;
-  max-width: 1450px;
-  max-height: 1450px;
-}
 body .hero .red-circle-container .redcircle {
   position: relative;
   width: 90rem;
@@ -55,7 +50,7 @@ body .hero .red-circle-container .redcircle {
   background-color: #E15252;
   overflow: hidden;
   top: -25%;
-  left: 9%;
+  transition: left 0.5s;
 }
 body .hero .red-circle-container .redcircle::before {
   content: "";
@@ -128,6 +123,7 @@ body main .servicesforyou .options-container {
   flex-direction: row;
   max-width: 1903px;
   margin-top: 40px;
+  transition: gap 2s ease-in-out;
 }
 body main .servicesforyou .options-container .column1 {
   display: flex;
@@ -187,6 +183,7 @@ body main .AboutUs .description {
   overflow: hidden;
   position: relative;
   z-index: 1;
+  transition: width 1s ease-in-out;
 }
 body main .AboutUs .description .line {
   width: 90px;
@@ -239,6 +236,7 @@ body main .ContactUs .formholder {
   border-radius: 0 0 50px 50px;
   z-index: 1;
   position: relative;
+  transition: width 1s ease-in-out;
 }
 body main .ContactUs .ContactUsHeader {
   margin-top: 100px;
@@ -252,6 +250,7 @@ body main .ContactUs .form {
   flex-direction: row;
   margin-top: 50px;
   padding-left: 13rem;
+  transition: width 1s ease-in-out;
 }
 body main .ContactUs form {
   display: flex;
@@ -291,6 +290,7 @@ body main .ContactUs ul {
   gap: 30px;
   color: #ffffff;
   margin-top: 36px;
+  transition: margin-left 1s ease-in-out;
 }
 body main .ContactUs ul li {
   background-repeat: no-repeat;
@@ -492,6 +492,9 @@ body .link.discountlink2 {
   ul {
     margin-left: 100px;
   }
+  .redcircle {
+    left: 9%;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .options-container {
@@ -508,5 +511,8 @@ body .link.discountlink2 {
   }
   ul {
     margin-left: 20px;
+  }
+  .redcircle {
+    left: 1%;
   }
 }/*# sourceMappingURL=style.css.map */
