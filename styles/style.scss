@@ -364,6 +364,11 @@ body {
                 .contact-phone {
                     background-image: url(../assets/phone.png);
                     background-size: 18px 18px;
+
+                    .contact_phone {
+                        text-decoration: none;
+                        color: #FFFFFF;
+                    }
                 }
 
                 .contact-address {
