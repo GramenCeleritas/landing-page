@@ -354,6 +354,11 @@ body {
                 .contact-email {
                     background-image: url(../assets/mail.png);
                     background-size: 20px 16px;
+
+                    .email_link {
+                        text-decoration: none;
+                        color: #FFFFFF;
+                    }
                 }
 
                 .contact-phone {
