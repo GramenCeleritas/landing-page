@@ -4,11 +4,11 @@
 
 
 body {
-
     .main-wrapper {
         display: flex;
         flex-direction: column;
         max-width: 118.938rem;
+        margin: auto;
     }
 
     .heading-wrapper {
@@ -145,7 +145,7 @@ body {
             .options-container {
                 display: flex;
                 flex-direction: row;
-                max-width: 1903px;
+                max-width: 1250px;
                 margin-top: 40px;
                 transition: gap 2s ease-in-out;
                 
@@ -511,7 +511,7 @@ body {
 
 @media only screen and (min-width: 1200px) {
     .options-container {
-        gap: 5.875rem;
+        gap: 5rem;
     }
 
     .description {
